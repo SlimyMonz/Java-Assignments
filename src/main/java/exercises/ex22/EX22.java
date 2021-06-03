@@ -9,7 +9,7 @@ package exercises.ex22;
 
 import java.util.Scanner;
 
-public class ex22 {
+public class EX22 {
 
 	private final int INPUTS = 3; //modify this to change how many inputs are needed in the array
 
@@ -19,7 +19,7 @@ public class ex22 {
 
 	public static void main(String[] args) {
 
-		ex22 app = new ex22();
+		EX22 app = new EX22();
 
 		app.getNumber(app.inputs);
 

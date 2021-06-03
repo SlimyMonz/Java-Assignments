@@ -10,13 +10,13 @@ package exercises.ex23;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class ex23 {
+public class EX23 {
 
 	public static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
 
-		ex23 app = new ex23();
+		EX23 app = new EX23();
 
         app.troubleshootCar();
 
