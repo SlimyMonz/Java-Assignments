@@ -1,8 +1,6 @@
 <component name="CopyrightManager">
   <copyright>
-    <option name="notice"
-            value="&#10;UCF COP3330 Summer 2021&#10;
-                    Copyright 2021 Harry Hocker&#10;" />
+    <option name="notice" value="UCF COP3330 Summer 2021&#10;Copyright 2021 Harry Hocker" />
     <option name="myName" value="cop3330" />
   </copyright>
 </component>
