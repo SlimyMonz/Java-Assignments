@@ -1,0 +1,44 @@
+@startuml
+
+class Animal {
+    +makeSound()
+    +move()
+}
+
+class Dog {
+
+'implementation:
+    -wakeUp()
+    -sleep()
+
+'interface:
+    +makeSound()
+    +move()
+    +bark()
+    +fetch()
+    +play()
+    +findDrugs()
+}
+
+class Cat {
+    +makeSound()
+    +move()
+}
+
+class Bird {
+    +makeSound()
+    +move()
+}
+
+Animal <|-- WalkingAnimal
+Animal <|-- FlyingAnimal
+
+FlyingAnimal <|-- Bird
+WalkingAnimal <|-- Cat
+WalkingAnimal <|-- Dog
+
+class Application
+'this says Application creates Animal
+Application *-- Animal
+
+@enduml
