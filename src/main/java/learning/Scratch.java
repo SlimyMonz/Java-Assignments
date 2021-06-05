@@ -46,9 +46,20 @@ Use a single output statement to display the outputs.
 
 package learning;
 
-public class Validate {
+import java.util.Scanner;
+
+public class Scratch {
+
+	static Scanner sc = new Scanner(System.in);
+
 	public static void main(String[] args) {
-		System.out.println("Ay");
+
+
+		double db = (Math.floor(Double.parseDouble(sc.nextLine()) * 100))/100.f;
+
+		double eb = 100.124;
+
+		System.out.printf("%.2f", eb);
 	}
 
 }
