@@ -7,7 +7,7 @@ package lecture.week3;
 
 import java.util.Scanner;
 
-public class App {
+public class WEEK3 {
 
 	static Scanner sc = new Scanner(System.in);
 	// static is a Class variable.
@@ -16,11 +16,11 @@ public class App {
 
 	public static void main(String[] args) {
 
-	App myApp = new App(); // this allows functions to run in here
+	WEEK3 myWEEK3 = new WEEK3(); // this allows functions to run in here
 
-		String name = myApp.readName();
+		String name = myWEEK3.readName();
 
-		myApp.printOutput(name);
+		myWEEK3.printOutput(name);
 
 	}
 

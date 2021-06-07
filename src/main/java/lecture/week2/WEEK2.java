@@ -5,7 +5,7 @@
 
 package lecture.week2;
 
-public class App {
+public class WEEK2 {
 
     public static void main(String[] args) {
 

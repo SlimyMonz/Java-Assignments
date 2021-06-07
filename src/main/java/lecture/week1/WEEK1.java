@@ -5,7 +5,7 @@
 
 package lecture.week1;
 
-public class Welcome1 {
+public class WEEK1 {
     public static void main(String[] args) {
         System.out.println("awesome");
         System.out.println("awesome");
