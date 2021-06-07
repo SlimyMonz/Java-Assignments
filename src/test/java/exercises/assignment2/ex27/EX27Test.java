@@ -9,20 +9,33 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ValidateTest {
+class EX27Test {
 
-	Validate ex27 = new Validate();
+	EX27 ex27 = new EX27();
+
+	@Test
+	void validateInput() {
+
+		String expected = "Try again."; //this essentially means the same as "false";
+		String actual = ex27.validateInput("Harry", "Potter", "11111", "A7-BBBB");
+
+		assertEquals(expected, actual);
+	}
 
 	@Test
 	void checkFirstName() {
+		boolean actual = ex27.checkFirstName("Ashley1234");
+		assertTrue(actual);
 	}
 
 	@Test
 	void checkLastName() {
+		boolean actual = ex27.checkLastName("CannotType130943");
+		assertTrue(actual);
 	}
 
 	@Test
-	void checkZIPTest() {
+	void checkZIP() {
 		String input = "1gg23436";
 
 		boolean expected = false;
@@ -34,7 +47,7 @@ class ValidateTest {
 
 
 	@Test
-	void checkIDTest() {
+	void checkID() {
 
 		String input = "ab-1234";
 

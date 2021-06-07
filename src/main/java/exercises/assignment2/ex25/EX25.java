@@ -28,7 +28,7 @@ public class EX25 {
 
 	}
 
-
+	// tested: pass!
 	int passwordValidator(String input) {
 
 		int strLen = input.length();
@@ -46,6 +46,7 @@ public class EX25 {
 		return strength;
 	}
 
+	// tested: PASSED
 	static String passStrength(int strength) {
 
 		String[] strengthArray =

@@ -21,6 +21,7 @@ public class EX26 {
 
 	}
 
+	//test: PASS
 	String calculateMonthsUntilPaidOff(String currentBalance, String APR, String monthlyPayments) {
 
 		double balance = Math.ceil(100*Double.parseDouble(currentBalance))/100.f;
@@ -31,6 +32,7 @@ public class EX26 {
 		double log1 = Math.log10(1+balance/pay*(1-power));
 		double log2 = Math.log10(1+rate);
 
+		// If NaN, then that means it's impossible to pay off the debt since it reaches infinity.
 		if (Double.isNaN(log1) || Double.isNaN(log2)) {
 			return "infinite";
 		}
@@ -41,6 +43,7 @@ public class EX26 {
 
 	}
 
+	// simple input/output of strings, so not tested.
 	String get(int i) {
 
 		switch (i) {

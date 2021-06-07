@@ -20,4 +20,12 @@ class EX25Test {
 		int actual = ex25.passwordValidator(test);
 		assertEquals(expected, actual);
 	}
+
+	@Test
+	void testPasswordStrength() {
+		int input = 2;
+		String expected = "is okay.";
+		String actual = EX25.passStrength(input);
+		assertEquals(expected, actual);
+	}
 }

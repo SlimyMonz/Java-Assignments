@@ -8,7 +8,7 @@ package exercises.assignment2.ex27;
 
 import java.util.Scanner;
 
-public class Validate {
+public class EX27 {
 
 	static Scanner sc = new Scanner(System.in);
 
@@ -19,13 +19,15 @@ public class Validate {
 
 	public static void main(String[] args) {
 
-		Validate ex27 = new Validate();
+		EX27 ex27 = new EX27();
 
-		System.out.println(ex27.getInput() + ex27.validateInput(inputFirst, inputLast, inputZIP, inputID));
+		ex27.getInput();
+
+		System.out.println(ex27.validateInput(inputFirst, inputLast, inputZIP, inputID));
 
 	}
-
-	String getInput() {
+// not tested due to simple inputs;
+	void getInput() {
 
 		System.out.print("What is your first name? ");
 		inputFirst = sc.nextLine();
@@ -36,11 +38,9 @@ public class Validate {
 		System.out.print("What is your ID? ");
 		inputID = sc.nextLine();
 
-		return "";
-
 	}
 
-
+// test passed
 	String validateInput(String first, String last, String ZIP, String ID) {
 
 		boolean bool1, bool2, bool3, bool4;
@@ -52,9 +52,10 @@ public class Validate {
 
 		if (bool1 && bool2 && bool3 && bool4) return "There were no errors found.";
 
-		return "";
+		return "Try again.";
 	}
 
+// test passed. Note: requirements never specified non-numerals in the input. Most anything input is acceptable.
 	boolean checkFirstName (String input) {
 
 		if (input.length() == 0) {
@@ -68,6 +69,7 @@ public class Validate {
 		}
 	}
 
+//test passed and same note as checkFirstName
 	boolean checkLastName (String input) {
 
 		if (input.length() == 0) {
@@ -81,6 +83,7 @@ public class Validate {
 		}
 	}
 
+// passed
 	boolean checkZIP (String input) {
 
 		try {
@@ -97,7 +100,7 @@ public class Validate {
 		return true;
 	}
 
-
+// passed
 	boolean checkID (String input) {
 
 		char[] array = input.toCharArray();

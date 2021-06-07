@@ -28,7 +28,7 @@ class EX24Test {
 
 
 	@Test
-	void isAnagramTest() {
+	void testIsAnagram() {
 
 		String s1 = "cda";
 		String s2 = "acd";

@@ -21,7 +21,7 @@ public class EX24 {
 
 	}
 
-
+	// this program is not tested because it is a compilation of other tested methods
 	void runProgram() {
 
 		System.out.println("Enter two words to see if they're anagrams: ");
@@ -45,7 +45,7 @@ public class EX24 {
 		return sc.nextLine().toUpperCase(Locale.ROOT);
 	}
 
-
+// tested: PASSED
 	boolean isAnagram(String s1, String s2) {
 
 		char[] c1 = organizeArray(s1);
@@ -55,7 +55,7 @@ public class EX24 {
 
 	}
 
-
+// tested: PASSED
 	char[] organizeArray(String input) {
 
 		char[] array = input.toCharArray();
