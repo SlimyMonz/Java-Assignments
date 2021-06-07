@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+startprogram -> forloop
+
+forloop -> input
+
+input -> total
+
+input -> total
+
+input -> total
+
+total -> printout
+
+
+@enduml

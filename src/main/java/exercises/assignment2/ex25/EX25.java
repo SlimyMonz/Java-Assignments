@@ -8,13 +8,13 @@ package exercises.assignment2.ex25;
 
 import java.util.Scanner;
 
-public class Password {
+public class EX25 {
 
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
 
-		Password ex25 = new Password();
+		EX25 ex25 = new EX25();
 
 		System.out.print("Enter a password: ");
 

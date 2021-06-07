@@ -22,13 +22,17 @@ class ValidateTest {
 	}
 
 	@Test
-	void checkZipTest() {
+	void checkZIPTest() {
 		String input = "1gg23436";
+
 		boolean expected = false;
 		boolean actual = ex27.checkZIP(input);
+
 		assertEquals(expected, actual);
 
 	}
+
+
 	@Test
 	void checkIDTest() {
 

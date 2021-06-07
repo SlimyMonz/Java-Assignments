@@ -9,9 +9,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PasswordTest {
+class EX25Test {
 
-	Password ex25 = new Password();
+	EX25 ex25 = new EX25();
 
 	@Test
 	void passwordValidatorTest() {

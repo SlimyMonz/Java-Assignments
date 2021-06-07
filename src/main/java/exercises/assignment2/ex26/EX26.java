@@ -7,13 +7,13 @@ package exercises.assignment2.ex26;
 
 import java.util.Scanner;
 
-public class CreditDebt {
+public class EX26 {
 
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
 
-		CreditDebt ex26 = new CreditDebt();
+		EX26 ex26 = new EX26();
 
 		String monthsToPay = ex26.calculateMonthsUntilPaidOff(ex26.get(1), ex26.get(2), ex26.get(3));
 

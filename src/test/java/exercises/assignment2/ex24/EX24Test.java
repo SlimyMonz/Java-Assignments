@@ -10,9 +10,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MainTest {
+class EX24Test {
 
-	Main ex24 = new Main();
+	EX24 ex24 = new EX24();
 
 	@Test
 	void testOrganizeArray() {

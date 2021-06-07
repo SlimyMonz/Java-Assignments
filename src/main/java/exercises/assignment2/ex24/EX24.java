@@ -9,13 +9,13 @@ import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class EX24 {
 
 	Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
 
-		Main ex24 = new Main();
+		EX24 ex24 = new EX24();
 
 		ex24.runProgram();
 
