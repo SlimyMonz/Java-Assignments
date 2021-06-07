@@ -3,17 +3,16 @@
 
 autonumber
 
-startprogram -> forloop
+startprogram -> forloopMethod
 
-forloop -> input
-
-input -> total
+forloopMethod --> input
 
 input -> total
 
 input -> total
 
-total -> printout
+input -> total
 
+total --> printout
 
 @enduml
