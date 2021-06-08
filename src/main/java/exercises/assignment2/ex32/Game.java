@@ -89,6 +89,7 @@ public class Game {
 		}
 	}
 
+
 	static String[] outPuts = {
 			"Let's play Guess the Number!",
 			"Enter the difficulty level (1, 2, or 3): ",
