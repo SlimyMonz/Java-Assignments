@@ -35,7 +35,7 @@ public class GameEX32 {
 
 			attempts++;
 			inputToInt();
-			checkNumber();
+			if (userInput != -1) checkNumber();
 
 		} while (userInput != generatedNum);
 	}
@@ -70,6 +70,7 @@ public class GameEX32 {
 		try {
 			output = Integer.parseInt(input);
 		} catch (NumberFormatException error) {
+			System.out.print(outPuts[7]);
 			output = -1;
 		}
 		userInput = output;
@@ -82,10 +83,8 @@ public class GameEX32 {
 			System.out.printf(outPuts[5], attempts);
 		} else if (userInput < generatedNum) {
 			System.out.print(outPuts[3]);
-		} else if (userInput > generatedNum) {
-			System.out.print(outPuts[4]);
 		} else {
-			System.out.println(outPuts[7]);
+			System.out.print(outPuts[4]);
 		}
 	}
 
@@ -100,6 +99,5 @@ public class GameEX32 {
 			"Do you wanna play again (Y/N)? ",
 			"Invalid entry! Try again: "
 	};
-
 
 }
