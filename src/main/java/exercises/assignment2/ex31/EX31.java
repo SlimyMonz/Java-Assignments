@@ -33,6 +33,7 @@ public class EX31 {
 		printCalculations(heartRate, age);
 	}
 
+
 	private void printCalculations(int heartRate, int age) {
 
 		System.out.printf("Resting Pulse: %d \t \t Age: %d \n\n", heartRate, age);
