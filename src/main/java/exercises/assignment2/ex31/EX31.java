@@ -3,7 +3,6 @@
  * Copyright 2021 Harry Hocker
  */
 
-
 package exercises.assignment2.ex31;
 
 import java.io.InputStream;
