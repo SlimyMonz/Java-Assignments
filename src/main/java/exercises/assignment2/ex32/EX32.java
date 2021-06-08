@@ -16,9 +16,9 @@ public class EX32 {
 		String input;
 
 		do {
-			new Game();
+			new GameEX32();
 			do {
-				System.out.println(Game.outPuts[6]);
+				System.out.println(GameEX32.outPuts[6]);
 				input = sc.nextLine();
 			} while (!(input.equals("Y") || input.equals("N")));
 

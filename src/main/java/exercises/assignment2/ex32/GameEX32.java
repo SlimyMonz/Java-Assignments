@@ -7,7 +7,7 @@ package exercises.assignment2.ex32;
 
 import java.util.Scanner;
 
-public class Game {
+public class GameEX32 {
 
 	private final Scanner sc = new Scanner(System.in);
 
@@ -18,7 +18,7 @@ public class Game {
 	private int attempts = 0;
 
 
-	public Game() {
+	public GameEX32() {
 
 		System.out.println(outPuts[0] + "\n");
 
