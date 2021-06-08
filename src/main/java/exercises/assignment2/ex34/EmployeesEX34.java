@@ -3,12 +3,12 @@
  * Copyright 2021 Harry Hocker
  */
 
-package exercises.assignment2.ex35;
+package exercises.assignment2.ex34;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class EmployeesEX35 {
+public class EmployeesEX34 {
 
 	private ArrayList<String> employeeList = new ArrayList<>(Arrays.asList(
 			"John Man",

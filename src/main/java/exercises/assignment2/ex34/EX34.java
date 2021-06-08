@@ -5,10 +5,23 @@
 
 package exercises.assignment2.ex34;
 
+import java.util.Scanner;
+
 public class EX34 {
+
+	private static final Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
 
-	}
+		EmployeesEX34 e34 = new EmployeesEX34();
 
+		System.out.println("Here is the employee list:");
+
+		e34.getEmployeeList();
+
+		System.out.print("\nEnter employee name to remove: ");
+
+		e34.subtractEmployee(sc.nextLine());
+
+	}
 }
