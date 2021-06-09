@@ -3,8 +3,6 @@
  * Copyright 2021 Harry Hocker
  */
 
-
-
 package exercises.assignment2.ex36;
 
 import java.util.ArrayList;
