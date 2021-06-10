@@ -14,8 +14,11 @@ public class PassGen_EX37 {
 
 	private final Scanner sc = new Scanner(System.in);
 
-	private final ArrayList<String> characters = new ArrayList<>();
-	// Empty?? Check the bottom method!
+	private final ArrayList<String> characters = new ArrayList<>(Arrays.asList(
+			"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+			"0123456789",
+			"!@#$%^&*"
+	));
 
 	private final String[] outputStrings = {
 			"What's the minimum length? ",
@@ -27,26 +30,22 @@ public class PassGen_EX37 {
 
 	public PassGen_EX37() {
 
-		int[] inputs = new int[3];
+		int[] inputs = new int[3]; //can't be more than three inputs
+
 		do {
 
 			getValues(inputs);
+
 			if (!(enoughLetters(inputs))) System.out.println(outputStrings[3]);
 
 		} while (!(enoughLetters(inputs)));
+
+		inputs[0] -= (inputs[1]+inputs[2]); //sets the number of letters for use later
 
 		generatePassword(inputs);
 
 	}
 
-	private void addCharacters(String... list) {
-
-		for (String character : list) {
-
-			characters.addAll(Arrays.asList((character.split(""))));
-
-		}
-	}
 
 	private void getValues(int[] inputArray) {
 
@@ -61,26 +60,23 @@ public class PassGen_EX37 {
 		return (inputArray[0] / (inputArray[1] + inputArray[2]) >= 2);
 	}
 
+
 	private void generatePassword(int[] inputArray) {
-
-		String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-		String numbers = "0123456789";
-		String specialChar = "!@#$%^&*";
-
-		addCharacters(letters, numbers, specialChar);
 
 		System.out.print(outputStrings[4]);
 
-		for (int i = 0; i < (inputArray[0] - inputArray[1] - inputArray[2]); i++) {
-			System.out.print(characters.get(((int) (Math.random() * (letters.length())))));
-		}
+		ArrayList<String> stringArray;
 
-		for (int i = 0; i < inputArray[1]; i++) {
-			System.out.print(characters.get(((int) (Math.random() * numbers.length()) + (letters.length()))));
-		}
+		for (int i = 0; i < inputArray.length; i++) {
 
-		for (int i = 0; i < inputArray[2]; i++) {
-			System.out.print(characters.get(((int) (Math.random() * (specialChar.length())) + (characters.size() - specialChar.length()))));
+			stringArray = new ArrayList<>( Arrays.asList(characters.get(i).split("")));
+
+			for (int j = 0; j < inputArray[i]; j++) {
+				System.out.print(stringArray.get(((int) (Math.random() * (stringArray.size())))));
+			}
+
+			stringArray.clear();
+
 		}
 	}
 }
