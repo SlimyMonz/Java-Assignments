@@ -1,0 +1,19 @@
+@startuml
+
+class WEEK4
+class ConsoleApp
+class GUIApp
+class W4_Calc
+
+object add
+object sub
+object div
+object mult
+
+WEEK4 o-> W4_Calc
+
+ConsoleApp o--> W4_Calc
+GUIApp o--> W4_Calc
+
+
+@enduml

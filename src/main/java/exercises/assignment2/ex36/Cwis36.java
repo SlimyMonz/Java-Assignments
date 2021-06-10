@@ -18,8 +18,8 @@ public class Cwis36 {
 
 	String printThis = """
 			The average is: %.1f\s
-			The minimum is: %.1f\s
-			The maximum is: %.1f\s
+			The minimum is: %.0f\s
+			The maximum is: %.0f\s
 			The Standard Deviation is: %.2f
 			""";
 
