@@ -57,27 +57,26 @@ public class PassGen_EX37 {
 	}
 
 
-	private boolean enoughLetters(int[] inputArray) {
+	protected boolean enoughLetters(int[] inputArray) {
 		return (inputArray[0] / (inputArray[1] + inputArray[2]) >= 2);
 	}
 
 	private void generatePassword(int[] inputArray) {
 
-		String upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-		String lowerCase = "abcdefghijklmnopqrstuvwxyz";
+		String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 		String numbers = "0123456789";
 		String specialChar = "!@#$%^&*";
 
-		addCharacters(upperCase, lowerCase, numbers, specialChar);
+		addCharacters(letters, numbers, specialChar);
 
 		System.out.print(outputStrings[4]);
 
 		for (int i = 0; i < (inputArray[0] - inputArray[1] - inputArray[2]); i++) {
-			System.out.print(characters.get(((int) (Math.random() * (upperCase.length() + lowerCase.length())))));
+			System.out.print(characters.get(((int) (Math.random() * (letters.length())))));
 		}
 
 		for (int i = 0; i < inputArray[1]; i++) {
-			System.out.print(characters.get(((int) (Math.random() * numbers.length()) + (upperCase.length() + lowerCase.length()))));
+			System.out.print(characters.get(((int) (Math.random() * numbers.length()) + (letters.length()))));
 		}
 
 		for (int i = 0; i < inputArray[2]; i++) {
