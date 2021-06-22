@@ -1,0 +1,18 @@
+@startuml
+
+class EX43
+class MakeWebsite {
+    String output_text_path
+    getInputs()
+    generateFiles()
+    outputFilesCreated()
+}
+
+abstract fileLocation
+abstract printOut
+
+EX43 -> MakeWebsite
+MakeWebsite --> fileLocation
+MakeWebsite -> printOut
+
+@enduml

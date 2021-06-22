@@ -15,12 +15,9 @@ public class Scratch {
 
 	public static void main(String[] args) {
 
+		String systemDir = System.getProperty("user.dir");
+		System.out.println(systemDir);
 
-		double db = (Math.floor(Double.parseDouble(sc.nextLine()) * 100))/100.f;
-
-		double eb = 100.124;
-
-		System.out.printf("%.2f", eb);
 	}
 
 }

@@ -12,7 +12,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="hocker-cop3330" options="--add-exports java.base/sun.util.locale=ALL-UNNAMED" />
+      <module name="hocker-cop3330" options="" />
     </option>
   </component>
 </project>

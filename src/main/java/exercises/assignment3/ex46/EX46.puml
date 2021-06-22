@@ -1,0 +1,33 @@
+@startuml
+
+class txtFile
+abstract printOut
+
+class EX46
+
+class Words{
+String[] words
+Int[] wordsCount
+TreeMap(String, Integer)
+}
+
+class TextFile {
+String txtPath
+getText()
+}
+
+class ParseText {
+    getTextFile)(
+    setWords()
+}
+
+EX46 -|> Words
+txtFile -> TextFile
+ParseText <|--> Words
+TextFile <|--> ParseText
+
+Words -> EX46
+
+EX46 --> printOut
+
+@enduml

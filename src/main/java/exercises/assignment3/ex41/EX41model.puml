@@ -1,0 +1,36 @@
+@startuml
+
+abstract runApp
+class Main_EX41
+abstract PrintOut
+abstract OutputText
+abstract InputText
+
+class Employees {
+  .. Setter ..
+  + setStringArray()
+  + setOrder()
+  + setTextFile()
+  .. Getter ..
+  + getTextFile()
+  + getStringArray()
+  __ private data __
+ArrayList<String>
+
+}
+
+runApp -> Main_EX41
+
+Main_EX41 <--|> Employees
+
+InputText -> Employees
+
+
+Employees -> OutputText
+
+OutputText -> PrintOut
+
+Main_EX41 -|> PrintOut
+
+
+@enduml

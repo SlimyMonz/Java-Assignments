@@ -1,0 +1,18 @@
+@startuml
+
+class EX45
+class ReplaceText {
+String  txt_file_path
+createStringFromText()
+replaceInputString()
+saveFile()
+}
+abstract outputText
+abstract printOut
+
+EX45 --> ReplaceText
+ReplaceText --> outputText
+ReplaceText --> printOut
+
+
+@enduml

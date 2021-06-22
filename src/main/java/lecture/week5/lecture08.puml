@@ -1,0 +1,52 @@
+@startuml
+
+class Gradebook {
+    - Assignments: List
+    --
+    + addStudent()
+    + removeStudent()
+    --
+    + lookupStudentGrades()
+    + getStatistics(Assignment)
+    --
+    + addAssignment(Assignment)
+    + removeAssignment(Assignment)
+}
+
+class Assignment {
+    Students: List
+    pointValue: double
+    title: String
+    dueDate: Date
+
+    getMaxScore()
+    setMaxScore()
+
+    getStudentScore(Student)
+}
+
+interface TimedAssignmentBehaviors {
+    + setTimeLimit()
+    + setStudentTime()
+}
+
+
+interface MultipleChoiceBehaviors {
+    + setNumberofChoices()
+}
+
+
+
+class Student {
+    AssignmentScores: Map<Assignment, Double>
+}
+
+Gradebook o--> Student
+Student o--> Assignment
+Assignment <|- TimedAssignment
+MultipleChoice -|> Assignment
+Assignment <|-- EssayExam
+TimedAssignment -> TimedAssignmentBehaviors
+MultipleChoiceBehaviors <- MultipleChoice
+
+@enduml

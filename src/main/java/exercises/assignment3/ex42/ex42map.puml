@@ -1,0 +1,29 @@
+@startuml
+
+abstract printOut
+abstract outputText
+
+class EX42
+class Employees {
+
+    Path: filePath
+    List: String: employeeList
+    List: Hashmap: employeeMap
+
+    setEmployeeList(array)
+    setEmployeeMap(array)
+    printMap(List: Hashmap)
+
+    +Employees()
+
+}
+
+EX42 -|> Employees
+
+Employees --> printOut
+Employees --> outputText
+
+@enduml
+
+
+

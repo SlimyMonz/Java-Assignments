@@ -1,0 +1,18 @@
+@startuml
+
+abstract output
+abstract txt
+
+class Main
+
+class Product {
+gsonToObject()
+objectToArrayList()
+getUserInput()
+}
+
+Main -|> Product
+Product --> output
+txt --> Product
+
+@enduml
